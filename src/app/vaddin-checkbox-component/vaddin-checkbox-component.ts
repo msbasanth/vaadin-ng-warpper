@@ -1,7 +1,6 @@
 import { Component, NgZone,  EventEmitter } from '@angular/core';
-import {CheckboxElement} from '@vaadin/vaadin-checkbox/src/vaadin-checkbox.js'
 import { ChangeDetectorRef, ElementRef } from '@angular/core';
-import '@vaadin/vaadin-checkbox';
+import '@vaadin/vaadin-checkbox/vaadin-checkbox.js'
 import { ProxyCmp, proxyOutputs } from '../proxy-utils';
 
 
@@ -19,7 +18,6 @@ export class VaadinCheckboxComponent {
   protected el: HTMLElement;
 
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
-    new  CheckboxElement(); // We have this creation just for custom element registration.
     c.detach();
     this.el = r.nativeElement;
 
