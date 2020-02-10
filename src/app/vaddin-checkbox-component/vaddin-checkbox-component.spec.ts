@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VaddinComponetComponent } from './vaddin-componet.component';
+import { VaadinCheckboxComponent } from './vaddin-checkbox-component';
 
 describe('VaddinComponetComponent', () => {
-  let component: VaddinComponetComponent;
-  let fixture: ComponentFixture<VaddinComponetComponent>;
+  let component: VaadinCheckboxComponent;
+  let fixture: ComponentFixture<VaadinCheckboxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VaddinComponetComponent ]
+      declarations: [ VaadinCheckboxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VaddinComponetComponent);
+    fixture = TestBed.createComponent(VaadinCheckboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

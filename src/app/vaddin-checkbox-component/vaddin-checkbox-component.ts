@@ -11,17 +11,15 @@ import { ProxyCmp, proxyOutputs } from '../proxy-utils';
   template: '<ng-content></ng-content>',
   inputs: ['active', 'disabled', 'focused', 'indeterminate', 'checked', 'empty']
 })
-export class VaddinComponetComponent {
+export class VaadinCheckboxComponent {
   change!: EventEmitter<CustomEvent>;
   checkedChanged!: EventEmitter<CustomEvent>;
   indeterminateChanged!: EventEmitter<CustomEvent>;
-
   
   protected el: HTMLElement;
 
-
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
-    this.el = new  CheckboxElement();
+    new  CheckboxElement(); // We have this creation just for custom element registration.
     c.detach();
     this.el = r.nativeElement;
 

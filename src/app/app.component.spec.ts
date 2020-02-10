@@ -1,8 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import {VaddinComponetComponent} from './vaddin-componet/vaddin-componet.component'
-import { SHUIButtonComponent } from './shuibutton-componet/shuibutton-componet.component';
+import {VaadinCheckboxComponent} from './vaddin-checkbox-component/vaddin-checkbox-component'
 
 
 describe('AppComponent', () => {
@@ -13,8 +12,7 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        VaddinComponetComponent,
-        SHUIButtonComponent
+        VaadinCheckboxComponent
       ]
     }).compileComponents();
   }));
